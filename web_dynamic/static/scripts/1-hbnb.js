@@ -25,7 +25,7 @@ $(document).ready(function() {
 		else {
 			delete checkedAmenitiesList[amenId];
 		}
-	}
+	});
 
 	// invoke the earlier func to make changes to html
 	updateAmenList();
