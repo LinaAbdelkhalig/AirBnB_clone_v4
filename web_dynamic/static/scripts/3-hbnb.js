@@ -68,5 +68,5 @@ $(document).ready(function() {
         });
     };
     //trigger newPlaces
-    updatePlaces();
+    newPlaces();
 });
