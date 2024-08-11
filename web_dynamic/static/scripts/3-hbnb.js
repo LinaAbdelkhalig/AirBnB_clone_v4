@@ -37,20 +37,7 @@ $(document).ready(function() {
         }
     });
 
-    // checkbox
-    const checkbox = $('.amenities input[type="checkbox"]');
-    let checkedAmenity = {};
-    checkbox.change(function() {
-        let aId = $(this).data('id');
-        let aName = $(this).data('name');
-        if ($this).is(':checked') {
-            checkedAmenity[aId] = aName;
-        } else {
-            delete checkedAmentiy[aId];
-        }
-    });
-
-    fuction newPlaces() {
+    function newPlaces() {
         // requestign url
         $.ajax({
             url: "http://0.0.0.0:5001/api/v1/places_search/",
@@ -77,7 +64,7 @@ $(document).ready(function() {
                          </article>`;
                      $('.places').append(article);
 	        });
-	    };
+	    },
         });
     };
     //trigger newPlaces
