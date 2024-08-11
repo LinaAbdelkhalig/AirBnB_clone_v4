@@ -1,4 +1,4 @@
-web_flask/100-hbnb.py#!/usr/bin/python3
+#!/usr/bin/python3
 """ Starts a Flash Web Application """
 from models import storage
 from models.state import State
@@ -35,7 +35,7 @@ def hbnb():
     places = storage.all(Place).values()
     places = sorted(places, key=lambda k: k.name)
 
-    return render_template('100-hbnb.html',
+    return render_template('0-hbnb.html',
                            states=st_ct,
                            amenities=amenities,
                            places=places,
